@@ -32,6 +32,7 @@ Naïve Bayes Accuracy: 98.57%
 Stacked Ensemble with SMOTE Accuracy: 99.54%
 
 🧠 Technologies Used
+
 Python 🐍
 
 Scikit-learn
@@ -52,21 +53,4 @@ Handle imbalanced datasets effectively.
 
 Provide a scalable and extendable intrusion detection architecture.
 
-Let me know if you want a README.md file with badges, installation steps, and code usage instructions too.
 
-
-
-
-
-
-
-You said:
-I'll use this for readme, give short description
-
-
-ChatGPT said:
-Sure bro! Here's a short description you can use at the top of your GitHub repo:
-
-A machine learning-based Intrusion Detection System (IDS) that uses Random Forest, SVM, Naive Bayes, and a stacking ensemble with SMOTE to accurately detect network attacks. Features include preprocessing, feature selection, and a custom complexity evaluation metric.
-
-Let me know if you want an even shorter tagline for the repo bio or title section!
