@@ -1,56 +1,91 @@
-🔐 Proactive Network Intrusion Detection using Hybrid Machine Learning Models
-This project implements a Network Intrusion Detection System (NIDS) using advanced machine learning techniques, aiming to detect and classify malicious network traffic efficiently. The system is designed to proactively identify intrusions based on patterns learned from historical network data.
 
-🚀 Key Features
-✅ Data Preprocessing: Null value handling, label encoding, and feature normalization.
 
-✅ Feature Selection: Correlation-based filtering to reduce dimensionality.
+🔐 Proactive Software Defect Prediction Using Ensemble Machine Learning Models
 
-✅ Custom Feature Creation: Introduced a Complexity Evaluation metric to classify traffic segments.
+This project implements an intelligent intrusion detection system using machine learning classifiers, including Random Forest, Support Vector Machine (SVM), Naïve Bayes, and a Stacking Ensemble. It incorporates SMOTE for class imbalance handling and performs detailed evaluation using multiple performance metrics. The objective is to proactively detect intrusions with high accuracy and low false detection rates.
 
-✅ Base Models:
+📌 Key Features
 
-Random Forest
+* ✅ High-accuracy intrusion detection (up to **99.77%** with Random Forest)
+* ⚙️ **Ensemble Model** using Stacking Classifier with Logistic Regression as meta-classifier
+* ⚖️ **SMOTE** (Synthetic Minority Over-sampling Technique) to balance class distribution
+* 📊 Detailed performance evaluation (Accuracy, Precision, Recall, F1-Score, Confusion Matrix, ROC-AUC)
+* 📈 Visualizations for EDA and model comparison
+* 💡 Scalable and generalizable for various datasets
 
-Support Vector Machine (SVM)
+🧠 Algorithms Used
 
-Naïve Bayes
+* Random Forest Classifier
+* Support Vector Machine (SVM)
+* Naïve Bayes
+* Stacking Ensemble (with Logistic Regression as meta-classifier)
+* SMOTE for data balancing
 
-✅ Stacking Ensemble Classifier: Combines base models with Logistic Regression as the meta-classifier.
+🧰 Technologies & Libraries
 
-✅ Class Imbalance Handling: Applied SMOTE (Synthetic Minority Oversampling Technique) to improve detection of rare attack types.
+* Python
+* NumPy, Pandas
+* Scikit-learn
+* Imbalanced-learn (for SMOTE)
+* Matplotlib, Seaborn
+* Plotly (optional for interactive visuals)
 
-✅ Evaluation Metrics: Accuracy, Confusion Matrix, Classification Report.
+📂 Project Structure
 
-📊 Model Performance
-Random Forest Accuracy: 99.77%
 
-SVM Accuracy: 96.87%
+📁 intrusion-detection-ensemble
+│
+├── data/
+│   └── dataset.csv  # Preprocessed dataset
+├── models/
+│   └── trained_models.pkl  # Saved models (optional)
+├── notebooks/
+│   └── exploratory_analysis.ipynb
+│   └── model_training.ipynb
+├── results/
+│   └── confusion_matrix.png
+│   └── performance_report.pdf
+├── README.md
+└── main.py
 
-Naïve Bayes Accuracy: 98.57%
 
-Stacked Ensemble with SMOTE Accuracy: 99.54%
+🚀 How to Run
 
-🧠 Technologies Used
+1. Clone the repository:
 
-Python 🐍
+   ```bash
+   git clone https://github.com/your-username/intrusion-detection-ensemble.git
+   cd intrusion-detection-ensemble
+   ```
 
-Scikit-learn
+2. Install required dependencies:
 
-Pandas / NumPy
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Imbalanced-learn
+3. Run the main file:
 
-Matplotlib / Seaborn
+   ```bash
+   python main.py
+   ```
 
-📁 Dataset
-Trained and tested on publicly available network intrusion datasets (e.g., NSL-KDD, NSS-KDL, SDN).
+4. Or open the notebooks for step-by-step execution.
 
-📌 Project Goals
-Improve detection accuracy for various network intrusions.
+📈 Results
 
-Handle imbalanced datasets effectively.
+| Model             | Accuracy | Precision | Recall | F1-Score |
+| ----------------- | -------- | --------- | ------ | -------- |
+| Random Forest     | 99.77%   | 1.00      | 1.00   | 1.00     |
+| Stacking Ensemble | 99.54%   | 1.00      | 0.99   | 0.99     |
+| Naïve Bayes       | 98.57%   | 0.97      | 0.97   | 0.97     |
+| SVM               | 96.87%   | 0.74      | 0.94   | 0.83     |
 
-Provide a scalable and extendable intrusion detection architecture.
+🔬 Future Enhancements
+
+* Integration of deep learning (e.g., LSTM, CNN)
+* Real-time intrusion detection via streaming data
+* Explainable AI for model interpretability
+* AutoML for hyperparameter tuning
 
 
